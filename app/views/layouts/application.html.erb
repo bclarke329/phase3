@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+   
+
+    <nav>
+    <% if logged_in? %>
+    
+    <%= link_to "Create New Routine", new_routine_path, method:"get" %>
+     <%# link to home 
+    link to past routines
+    link to all logs
+    view all products
+    leave a review  %>
+    <%= link_to "Logout", logout_path, method:"delete" %>
+    <% end %> 
+    </nav>
+     <%= yield %>
   </body>
 </html>
