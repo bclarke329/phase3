@@ -14,8 +14,8 @@
 
     <nav>
     <% if logged_in? %>
-    
-    <%= link_to "Create New Routine", new_routine_path, method:"get" %>
+    <%= link_to "Create New Routine", new_routine_path %> |
+    <%# <%= link_to "View All Routines", routine_path %> 
      <%# link to home 
     link to past routines
     link to all logs
