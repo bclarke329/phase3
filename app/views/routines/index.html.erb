@@ -1,1 +1,11 @@
 <h1>Your past routines</h1>
+<% @routine.each do |routine| %>
+<%= routine.cleanser %>
+<%= routine.toner %>
+<%= routine.moisturizer %>
+<%= routine.serum %>
+<%= routine.spf %>
+<%= routine.time_of_day %>
+<% end %>
+
+
