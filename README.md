@@ -11,4 +11,14 @@ In this version of the application, a user can signup using an email and passwor
 <br>
 run `bundle install`
 <br>
-naviagate to  `http:localhost:3000
+naviagate to  `localhost:3000`
+<br>
+
+# Stretch Goals
+
+
+# Contributing 
+<br>
+This application was built for the sole purpose of experimenting and learning more about the Ruby On Rails framework. Please raise any issues before making changes.
+
+
