@@ -9,12 +9,11 @@ class ProductsController < ApplicationController
     end 
 
     def create 
-     
-        binding.pry
+    
     end 
 
     def show
-        @product = Product.find(params[:id])
+       @product = Product.find_by_id(params[:product_id])
     end 
 
 

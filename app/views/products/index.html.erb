@@ -7,10 +7,10 @@
 <p>You can also add a product, to start hearing what people have to say about an unlisted product.</p>
 <br>
 <br>
-<ul>
+<div>
 <% @products.each do |p| %>
 <%= p.brand.capitalize %> |
-<%= p.name %> |
+<a href=<%= "/products/@products" %>><%= p.name %></a>
 <%# <%= p.product_type.capitalize %><br>
 <% end %>
-</ul>
+</div>
