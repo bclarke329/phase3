@@ -11,6 +11,6 @@ Rails.application.routes.draw do
 
   resources :user
   resources :routines
-  resources :product
+  resources :products
   resources :product_reviews
 end

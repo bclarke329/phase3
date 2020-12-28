@@ -1,0 +1,16 @@
+<br>
+<br>
+<h1>All Products!</h1>
+<br>
+<p>This is a constantly evolving list of the most popular skincare products being sold.</p>
+<p>If you've used a product on the list, feel free to leave a review!</p>
+<p>You can also add a product, to start hearing what people have to say about an unlisted product.</p>
+<br>
+<br>
+<ul>
+<% @products.each do |p| %>
+<%= p.brand.capitalize %> |
+<%= p.name %> |
+<%# <%= p.product_type.capitalize %><br>
+<% end %>
+</ul>

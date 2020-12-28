@@ -14,13 +14,14 @@
 
     <nav>
     <% if logged_in? %>
+    <%= link_to "Home", user_path(current_user) %> |
     <%= link_to "Create New Routine", new_routine_path %> |
-    <%# <%= link_to "View All Routines", routine_path %> 
-     <%# link to home 
-    link to past routines
+    <%# <%= link_to "View All Routines", routine_path %>  
+    <%# link to past routines
     link to all logs
-    view all products
-    leave a review  %>
+    leave a review  %> 
+    <%= link_to "View All Products", products_path %> |
+    <%= link_to "Add A Product", new_product_path %> |
     <%= link_to "Logout", logout_path, method:"delete" %>
     <% end %> 
     </nav>

@@ -1,0 +1,10 @@
+
+<%= form_with model: @product do |f| %>
+<%= f.label :brand %><br>
+<%= f.text_field :brand %><br>
+<%= f.label :name %><br>
+<%= f.text_field :name %><br>
+<%= f.label :product_type %><br>
+<%= f.text_field :product_type %><br>
+<%= f.submit "Add Product" %>
+<% end %>
