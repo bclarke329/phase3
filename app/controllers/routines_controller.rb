@@ -2,7 +2,7 @@ class RoutinesController < ApplicationController
     before_action :redirect_if_not_logged_in
 
     def index
-        @routine = Routine.all
+        @routine = Routine.where(:user_id => current_user.id)
     end 
 
     def new
@@ -22,8 +22,15 @@ class RoutinesController < ApplicationController
 
     def show 
        @routine = Routine.find_by_id(params[:id])
- 
     end
+
+    def edit 
+        @routine = Routine.find(params[:id])
+    end 
+
+    def update
+        raise params.inspect
+    end 
 
     private
 

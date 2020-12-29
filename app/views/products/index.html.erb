@@ -10,7 +10,7 @@
 <div>
 <% @products.each do |p| %>
 <%= p.brand.capitalize %> |
-<a href=<%= "/products/@products" %>><%= p.name %></a>
+<%= link_to p.name, "/products/#{p.id}" %></a>
 <%# <%= p.product_type.capitalize %><br>
 <% end %>
 </div>

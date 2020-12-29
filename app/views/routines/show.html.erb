@@ -1,7 +1,8 @@
-<h1>Your Currrent Routine Is:</h1>
 <br>
 <div class="row">
     <div class="col-md-8 mx-auto">
+<h1>Your Currrent Routine Is:</h1>
+<br>
 <label>Routine Started On:</label></br>
 <%= @routine.created_at.strftime("%A, %b %d")%><br><br>
 <label>Cleanser:</label><br>
@@ -16,5 +17,9 @@
 <%= @routine.spf %><br><br>
 <label>This is my <%= @routine.time_of_day %> routine.</label><br>
 </ul>
+<br>
+<br>
+<%= link_to "Edit Routine", edit_routine_path(@routine) %>
+<%# add delete button %>
     </div>
 </div>
