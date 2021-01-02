@@ -4,16 +4,14 @@ class ProductsController < ApplicationController
         @products = Product.all
     end 
 
-    def new
-        @product = Product.new
-    end 
-
     def create 
-    
+        
     end 
 
     def show
        @product = Product.find_by_id(params[:id])
+       @review = Review.find_by_id(params[:id])
+       @user = User.find_by_id(params[:id])
     end 
 
 

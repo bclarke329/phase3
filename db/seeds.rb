@@ -13,3 +13,4 @@ Product.create(brand: 'Neutrogena', name: 'Glycerin Soap Bar', product_type: 'cl
 Product.create(brand: 'Neutrogena', name: 'Pore Refining Exfoliating Cleanser', product_type: 'cleanser')
 Product.create(brand: 'Neutrogena', name: 'Rapid Clear Stubborn Acne', product_type: 'cleanser')
 Product.create(brand: 'Neutrogena', name: 'Clear Pore Astringent', product_type: 'toner')
+ProductReview.create(title: 'Best Cleanser Ever', rating: '5', review: 'Cleanses well without drying skin', user_id: 1, product_id: 1 )

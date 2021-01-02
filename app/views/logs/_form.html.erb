@@ -1,0 +1,4 @@
+<%= form_with model: @log do |f| %>
+<%= f.label :current_condition, "How is your skin feeling today?" %><br>
+<%= f.select :current_condition, ['Normal', 'Dry', 'Oily', 'Sensitive', 'Breaking Out'] %><br>
+<%= f.label :water_level, "How much water did you drink today?" %>

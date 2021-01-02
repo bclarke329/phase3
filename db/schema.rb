@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_27_001533) do
+ActiveRecord::Schema.define(version: 2021_01_02_052726) do
 
-  create_table "product_reviews", force: :cascade do |t|
-    t.string "title"
-    t.integer "rating"
-    t.text "review"
+  create_table "logs", force: :cascade do |t|
+    t.string "current_condition"
+    t.integer "water_level"
+    t.integer "hours_slept"
+    t.integer "comments"
     t.integer "user_id"
-    t.integer "product_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(version: 2020_12_27_001533) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "product_type"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "title"
+    t.integer "rating"
+    t.text "review"
+    t.integer "user_id"
+    t.integer "product_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "routines", force: :cascade do |t|

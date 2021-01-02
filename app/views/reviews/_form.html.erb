@@ -1,0 +1,15 @@
+
+<%= form_with model: @reviews do |f| %>
+<%= f.label :title %><br>
+<%= f.text_field :title %><br>
+<%= f.label :rating, "Rating from 1-5." %><br>
+<%= f.number_field :rating, in: 1..5 %><br>
+<%= f.label :review %><br>
+<%= f.text_area :review %><br>
+<%= f.submit "Add Review" %>
+<% end %>
+<%# 
+## validations needed with this data
+title can't be more than 30 characters
+rating must be from 0-5
+review cant be more than 300. %>

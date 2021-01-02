@@ -11,13 +11,14 @@
 
   <body>
    <br>
+   
     <nav>
     <% if logged_in? %>
     <%= link_to "Home", user_path(current_user) %> |
     <%= link_to "Create New Routine", new_routine_path %> |
     <%= link_to "View Past Routines", routine_path(current_user) %> |
-    <%# link to past routines
-    link to all logs
+    <%= link_to "Create A Daily Log", new_log_path%> |
+    <%# link to all logs
     leave a review  %> 
     <%= link_to "View All Products", products_path %> |
     <%= link_to "Logout", logout_path, method:"delete" %>

@@ -1,6 +1,14 @@
 <br>
 <h1>Product show page</h1>
-<%= @product.name %> |
-<%= @product.brand %> |
-<%= @product.product_type %>
+<br>
+<h2><%= @product.name %></h2> 
+<br>
+<h2><%= @product.brand %></> 
+<br>
+<%= @product.product_type.capitalize %>
+<br>
+<br>
+<br> 
 
+<%= link_to "Leave A Review", new_product_review_path(@product.id)  %>
+<%= link_to "View All Reviews", product_review_path(@product.id) %>

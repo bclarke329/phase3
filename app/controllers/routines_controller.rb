@@ -25,13 +25,14 @@ class RoutinesController < ApplicationController
     end
 
     def edit 
-        @routine = Routine.find(params[:id])
+        @routine = Routine.find_by_id(params[:id])
     end 
 
     def update
         raise params.inspect
     end 
 
+    
     private
 
     def routine_params
