@@ -18,7 +18,8 @@ class UserController < ApplicationController
         redirect_if_not_logged_in
         @user = User.find(params[:id])
         #need rescue page cause this will berak if it can't find the user_id. redirect back to home page
-        @routine = Routine.find_by_id(params[:id])
+        @routine = Routine.find_by_id(params[:id]).last
+        @log = Log.find_by_id(params[:id]).last
     end
 
     private 

@@ -1,0 +1,7 @@
+<br>
+<div class="text-center">
+<h1>View All Daily Logs</h1>
+<br>
+<% @logs.each do |l| %><br>
+<%= l.created_at.strftime('%A, %b %d')%>
+<% end %>

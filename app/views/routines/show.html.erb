@@ -1,6 +1,5 @@
 <br>
-<div class="row">
-    <div class="col-md-8 mx-auto">
+<div class="text-center"
 <h1>Your Currrent Routine Is:</h1>
 <br>
 <label>Routine Started On:</label></br>
@@ -19,7 +18,7 @@
 </ul>
 <br>
 <br>
-<%= link_to "Edit Routine", edit_routine_path(@routine) %> |
-
+<div class="btn btn-primary">
+<%= link_to "Edit Routine", edit_routine_path(@routine), :class => "btn" %> | <%= button_to "Delete Routine", routine_path(@routine), method: :delete, :class => "btn" %>
     </div>
 </div>

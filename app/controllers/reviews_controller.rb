@@ -22,6 +22,10 @@ class ReviewsController < ApplicationController
         end 
     end 
 
+    def update
+        raise.params.inspect
+    end 
+
     def show
         @review = Review.find_by_id(params[:id])
         @product = Product.find_by_id(params[:id])

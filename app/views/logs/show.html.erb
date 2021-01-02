@@ -1,0 +1,22 @@
+<br>
+<div class="text-center">
+<h2>Your Log</h2>
+<br>
+<h5>Log Created At: </h5><br>
+<%= @log.created_at.strftime('%A, %b %d')%><br>
+
+<h5>How does your skin feel today?</h5><br>
+<%= @log.current_condition %><br><br>
+
+<h5>How much water did you drink today?</h5><br>
+<%= @log.water_level %>oz.<br><br>
+
+<h5>How many hours of sleep did you get?</h5><br>
+<%= @log.hours_slept %>hrs.<br><br>
+
+<h5>Leave yourself some comments, observations, or a little self love</h5><br>
+<%= @log.comments %>
+<br>
+<br>
+<%= link_to "Edit Your Log", edit_log_path(:id)%> | <%= button_to "Delete Log", log_path(@log), method: :delete%>
+</div>
