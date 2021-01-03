@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
 
     def new
         if params[:product_id] && @product = Product.find_by_id(params[:product_id]) #if its nested & product is found 
-        @review = @product.reviews.build
+            @review = @product.reviews.build
         else
          @review = Review.new
         end 
