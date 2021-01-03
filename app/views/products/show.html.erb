@@ -1,14 +1,11 @@
 <br>
-<h1>Product show page</h1>
+<div class="text-center">
 <br>
-<h2><%= @product.name %></h2> 
-<br>
-<h2><%= @product.brand %></> 
-<br>
-<%= @product.product_type.capitalize %>
+<h4><%= @product.name %></h4> 
+<h4><%= @product.brand %></h4>
+<h4><%= @product.product_type.capitalize %></h4>
 <br>
 <br>
 <br> 
-
-<%= link_to "Leave A Review", new_product_review_path(@product.id)  %>
+<%= link_to "Leave A Review", new_product_review_path(@product.id)  %> |
 <%= link_to "View All Reviews", product_reviews_path(@product.id) %>

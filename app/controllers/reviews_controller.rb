@@ -9,7 +9,11 @@ class ReviewsController < ApplicationController
     end 
 
     def new
-        @review = Review.new
+        if params[:product_id] && @product = Product.find_by_id(params[:product_id]) #if its nested & product is found 
+        @review = @product.reviews.build
+        else
+         @review = Review.new
+        end 
     end 
 
     def create
@@ -21,25 +25,19 @@ class ReviewsController < ApplicationController
         end 
     end 
 
-    def edit
-    end 
-
-    def update
-        raise.params.inspect
-    end 
-
     def show
         @review = Review.find_by_id(params[:id])
         @product = Product.find_by_id(params[:id])
     end 
 
     def destroy
+      
     end
 
     private
     
     def review_params
-        params.require(:review).permit(:title, :rating, :review)
+        params.require(:review).permit(:title, :rating, :review, :product_id)
     end
 
   

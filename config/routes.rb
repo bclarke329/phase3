@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   resources :logs
 
   resources :products, only: [:index, :show] do 
-    resources :reviews, only: [:new, :create, :index]
+    resources :reviews, only: [:new, :create, :index, :destroy]
   end
 end

@@ -1,9 +1,9 @@
 
-<%= form_with model: @reviews do |f| %>
-<%= f.label :title %><br>
+<%= form_with model: @reviews  do |f| %>
+<%= f.label :title, "Review Headline " %><br>
 <%= f.text_field :title %><br>
-<%= f.label :rating, "Rating from 1-5." %><br>
-<%= f.number_field :rating, in: 1..5 %><br>
+<%= f.label :rating, "How many stars would you give this product? Between 1-5 stars." %><br>
+<%= f.number_field :rating, in: 1..5 %> stars!<br>
 <%= f.label :review %><br>
 <%= f.text_area :review %><br>
 <%= f.submit "Add Review" %>

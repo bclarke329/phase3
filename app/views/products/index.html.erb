@@ -1,13 +1,14 @@
 <br>
 <br>
-<h1>All Products!</h1>
+<div class="text-center">
+<h1>View All Products!</h1>
 <br>
 <p>This is a constantly evolving list of the most popular skincare products being sold.</p>
 <p>If you've used a product on the list, feel free to leave a review!</p>
-<p>You can also add a product, to start hearing what people have to say about an unlisted product.</p>
 <br>
 <br>
 <div>
+
 <% @products.each do |p| %>
 <%= p.brand.capitalize %> |
 <%= link_to p.name, "/products/#{p.id}" %></a>
