@@ -1,13 +1,23 @@
 <br>
+<div class="text-center">
 <h1>Welcome, <%= @user.name %>!</h1>
 <p>Welcome to the new and improved DermaLog.<br>
  Log a new skincare routine, keep track of your daily changes,<br> 
  and help us gather the largest database of skincare products, complete with user reviews and recommendations.</p> 
-
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
 <h3>Your current routine: </h3><br>
+    </div>
 
+<div class="col-md-8">
 <h3>Your most recent log:</h3>
 <%# will display your last log %>
-
+        </div>
+    </div>
+</div>
 
 <%# if you have time: create the glow tip functunality %>

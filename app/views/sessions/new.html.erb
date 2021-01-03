@@ -1,9 +1,14 @@
-<h1>Login</h1>
+<div class="text-center">
+<br>
+<br>
+<br>
+<h1>Welcome To The DermaLog</h1>
+<br>
+<h3>Please Log In</h3>
 
 <% if flash[:message]%>
 <%= flash[:message] %>
 <% end %>
-<br>
 <br>
 <%= form_for :user do |f| %>
 <%= f.label :email %><br>
@@ -12,3 +17,4 @@
 <%= f.password_field :password, required:true %><br>
 <%= f.submit "Log In" %>
 <% end %>
+</div>

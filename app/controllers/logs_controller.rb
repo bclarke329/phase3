@@ -32,6 +32,9 @@ class LogsController < ApplicationController
         redirect_to log_path(@post)
      end 
 
+     def destroy
+     end 
+
     private
     
     def log_params

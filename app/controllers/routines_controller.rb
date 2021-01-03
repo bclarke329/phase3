@@ -26,10 +26,15 @@ class RoutinesController < ApplicationController
 
     def edit 
         @routine = Routine.find_by_id(params[:id])
+        redirect_to routines_path 
     end 
 
     def update
-        raise params.inspect
+       raise.params.inspect
+    end 
+
+    def destroy
+        Routine.find_by_id(params[:id]).destroy
     end 
 
     
