@@ -6,19 +6,25 @@ In this version of the application, a user can signup using an email and passwor
 
 
 # Starting the Application
-<br>
 <p>To view the application, fork and clone this repository
 <br>
-run `bundle install`
+Run `bundle install` to install gem dependencies. 
 <br>
-naviagate to  `localhost:3000`
+Navigate to  `localhost:3000`, then just create an account to check out the app. 
 <br>
 
 # Stretch Goals
 
+- Find an API, or populate the products database with more skincare products, add descriptions, and photos. 
+-Add CSS. I plan to use this project to practice my CSS skills once I complete the program. 
+-Allow users to upload images to their logs, to keep track of daily changes. 
+-Allow users to upload a profile picture. 
+-Create some sort of profile, so users can follow each other. 
+-Eventually host this application and switch to a postgres database. 
 
 # Contributing 
 <br>
-This application was built for the sole purpose of experimenting and learning more about the Ruby On Rails framework. Please raise any issues before making changes.
+Please do not make any contributions to this project. This project was built for the sole purpose of practicing the RoR framework and submitting it as my project for Flatiron's phase 3 project. Thank you. 
+
 
 
