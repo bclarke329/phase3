@@ -14,7 +14,7 @@
     <% if logged_in? %>
     <%= link_to "Home", user_path(current_user) %> |
     <%= link_to "Create New Routine", new_routine_path %> |
-    <%= link_to "View Past Routines", routine_path(current_user) %> |
+    <%= link_to "View All Routines", routines_path %> |
     <%= link_to "Create A Daily Log", new_log_path%> |
     <%= link_to "View All Logs", logs_path %> |
     <%# link to all logs

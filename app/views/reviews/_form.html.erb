@@ -1,12 +1,21 @@
-
-<%= form_for (@review) do |f| %>
-<%= f.label :title, "Review Headline " %><br>
-<%= f.text_field :title %><br>
-<%= f.label :rating, "How many stars would you give this product? Between 1-5 stars." %><br>
-<%= f.number_field :rating, in: 1..5 %> stars!<br>
-<%= f.label :review %><br>
-<%= f.text_area :review %><br>
-<%= f.submit "Add Review" %>
+<%= render 'error' %>
+<div class="text-center">
+<%= form_tag(product_reviews_path) do %>
+  <div class="form-group">
+     <%= label_tag(:title, "Review Headline") %>
+      <%= text_field_tag(:title, nil, class: "form-control") %>
+  </div>
+  <div class="form-group">
+     <%= label_tag(:rating, "How many stars would you give this product? Between 1-5 stars.") %>
+     <%= number_field_tag(:rating, nil, class: "form-control") %>
+  </div>
+  <div class="form-group">
+     <%= label_tag(:review) %>
+     <%= text_field_tag(:review, nil, class: "form-control") %>
+  </div>
+  <div class="actions">
+   <%= submit_tag("Add Review") %>
+  </div>
 <% end %>
 <%# 
 ## validations needed with this data

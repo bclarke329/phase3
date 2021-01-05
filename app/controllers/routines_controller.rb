@@ -16,12 +16,13 @@ class RoutinesController < ApplicationController
         redirect_to @routine
        else 
         render :new
-        binding.pry
+      
        end 
     end 
 
     def show 
        @routine = Routine.find_by_id(params[:id])
+       binding.pry
     end
 
     def edit 

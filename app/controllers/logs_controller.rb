@@ -33,6 +33,10 @@ class LogsController < ApplicationController
      end 
 
      def destroy
+        log = Log.find_by_id(params[:id])
+        if current_user
+            log.destroy
+        end 
      end 
 
     private

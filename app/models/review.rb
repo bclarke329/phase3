@@ -2,5 +2,8 @@ class Review < ApplicationRecord
     belongs_to :product
     belongs_to :user
 
-    validates :title, :rating, :review, presence: true
+    validates :title, length: { maximum: 30, too_long: "%{count} characters is the maximum allowed" }
+    validates_numericality_of :rating, :less_than_or_equal_to => 5
+    validates :review, length: {maximum: 150, too_long: "%{count} characters is the maximum allowed"  }
+
 end
