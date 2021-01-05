@@ -15,12 +15,12 @@ Navigate to  `localhost:3000`, then just create an account to check out the app.
 
 # Stretch Goals
 
-- Find an API, or populate the products database with more skincare products, add descriptions, and photos. 
--Add CSS. I plan to use this project to practice my CSS skills once I complete the program. 
--Allow users to upload images to their logs, to keep track of daily changes. 
--Allow users to upload a profile picture. 
--Create some sort of profile, so users can follow each other. 
--Eventually host this application and switch to a postgres database. 
+- Find an API, or populate the products database with more skincare products, add descriptions, and photos. <br>
+-Add CSS. I plan to use this project to practice my CSS skills once I complete the program. <br>
+-Allow users to upload images to their logs, to keep track of daily changes. <br>
+-Allow users to upload a profile picture. <br>
+-Create some sort of profile, so users can follow each other. <br>
+-Eventually host this application and switch to a postgres database. <br>
 
 # Contributing 
 <br>
