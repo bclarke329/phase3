@@ -1,7 +1,7 @@
 <br>
 <div class="text-center">
-<h1>View All Daily Logs</h1>
+<u><h1>View All Daily Logs</h1></u>
 <br>
-<% @logs.each do |l| %><br>
-<a><%= l.created_at.strftime('%A, %b %d')%></a>
+<% @sorted_logs.each do |l| %><br>
+<%= link_to l.created_at.strftime('%A, %b %d'), "/logs/#{l.id}" %>
 <% end %>

@@ -20,6 +20,6 @@
 <br>
 <br>
 <div>
-<%= link_to "Edit Routine", edit_routine_path(@routine) %> | <%= button_to "Delete Routine", routine_path(@routine), method: :delete %>
+<%= link_to "Edit Routine", edit_routine_path(@routine) %> | <%= link_to "Delete Routine", @routine, method: :delete, data: { confirm: "Are you sure you want to delete this routine?" } %>
     </div>
 </div>

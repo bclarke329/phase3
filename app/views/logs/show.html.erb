@@ -1,10 +1,8 @@
 <br>
-<div class="text-center">
-<h2>Your Log</h2>
 <br>
-<h5>Log Created At: </h5><br>
-<%= @log.created_at.strftime('%A, %b %d')%><br>
-
+<div class="text-center">
+<u><h2>Log for: <%= @log.created_at.strftime('%A, %b %d') %></h2></u>
+<br>
 <h5>How does your skin feel today?</h5><br>
 <%= @log.current_condition %><br><br>
 
@@ -18,5 +16,6 @@
 <%= @log.comments %>
 <br>
 <br>
-<%= link_to "Edit Your Log", edit_log_path(:id)%> | <%= button_to "Delete Log", log_path(@log), method: :delete%>
+<%= link_to "Edit Your Log", edit_log_path(:id)%> |  <%= link_to "Delete Log", @log, method: :delete, data: { confirm: "Are you sure you want to delete this log?" } %>
+
 </div>

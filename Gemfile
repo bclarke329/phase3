@@ -28,6 +28,7 @@ gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem "tabs_on_rails"
 gem 'rack-flash3'
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection'
