@@ -5,12 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(brand: 'CosRx', name: 'Good Morning Cleanser', product_type: 'cleanser')
-Product.create(brand: 'CosRx', name: 'Triple Hyaluronic Moisturizing Cleanser', product_type: 'cleanser')
-Product.create(brand: 'CosRx', name: 'AHA/BHA Clarifying Toner', product_type: 'toner')
-Product.create(brand: 'CosRx', name: 'Full Fit Propolis Overnight Mask', product_type: 'mask')
-Product.create(brand: 'Neutrogena', name: 'Glycerin Soap Bar', product_type: 'cleanser')
-Product.create(brand: 'Neutrogena', name: 'Pore Refining Exfoliating Cleanser', product_type: 'cleanser')
-Product.create(brand: 'Neutrogena', name: 'Rapid Clear Stubborn Acne', product_type: 'cleanser')
-Product.create(brand: 'Neutrogena', name: 'Clear Pore Astringent', product_type: 'toner')
-ProductReview.create(title: 'Best Cleanser Ever', rating: '5', review: 'Cleanses well without drying skin', user_id: 1, product_id: 1 )
+Product.create(brand: 'CosRx', name: 'Good Morning Cleanser', product_type: 'cleanser', description: "Keep your skin fresh and clean with COSRX Low pH Good Morning Gel Cleanser! Formulated with botanical skin-purifying ingredients, this gentle and hydrating formula rinses away impurities without disrupting the skin's natural moisture balance. Best for all skin types, especially oily skin and sensitive skin.")
+Product.create(brand: 'CosRx', name: 'Triple Hyaluronic Moisturizing Cleanser', product_type: 'cleanser', description: "CosRx's Triple Hyaluronic Moisturizing Cleanser provides the satisfying lather of a foam cleanser with the moisturizing benefits of a cream cleanser. Three types of replenishing hyaluronic acid deliver layers of moisture while the cleanser thoroughly dissolves oil, dirt, and pore impurities. Vitamin B5 conditions and softens the skin for a super smooth, hydrated result.")
+Product.create(brand: 'CosRx', name: 'AHA/BHA Clarifying Toner', product_type: 'toner', description: "COSRX AHA/BHA Clarifying Treatment Toner is an exfoliating daily toner that effectively eliminates flakes and dead skin cells while keeping pores clear. Infused with natural clarifying acids, this treatment toner controls excess oil and sebum while hydrating depleted skin. Best for all skin types, especially dull, and dry skin prone to pore congestion.")
+Product.create(brand: 'CosRx', name: 'Full Fit Propolis Overnight Mask', product_type: 'mask', description: "This gel type overnight mask feels refreshing on the skin, and it is good for cooling down sunburn or heated skin.
+This moisturizer is so lightweight that it is abosrbed into the skin very quickly, leaving the skin hydrated and baby soft.")
+Product.create(brand: 'Neutrogena', name: 'Glycerin Soap Bar', product_type: 'cleanser', description: "Neutrogena's glycerin-rich facial cleansing acne soap contains no dyes or hardeners. Designed for daily cleansing for acne-prone skin, this bar rinses clean-without leaving behind clogged pores It also features a non-medicated formula won't over-dry your skin.")
+Product.create(brand: 'Neutrogena', name: 'Pore Refining Exfoliating Cleanser', product_type: 'cleanser', description: "All you have to do to visibly reduce the look of large pores is wash your face. In fact, our dermatologist-tested cleanser with an alpha and beta formula is so effective that it refines the look of skin to be more even toned.
+There are two ways it delivers results. First, gentle exfoliators sweep away dead surface skin and smooth over rough, uneven patches. Then, the cleanser with an alpha-hydroxy formula penetrates into pores to remove dirt, oil and makeup that can clog and enlarge pores.You’ll discover that your skin looks smoother and more even toned." )
+Product.create(brand: 'Neutrogena', name: 'Rapid Clear Stubborn Acne', product_type: 'cleanser', description: "Maximum strength benzoyl peroxide is what powers this acne-fighting cleanser.
+It’s clinically proven to rapidly reduce the size and redness of stubborn acne. How rapidly, you might ask? You’ll start seeing results in just 1 day.")
+Product.create(brand: 'Neutrogena', name: 'Clear Pore Astringent', product_type: 'toner', description: "Our daily, oil-control astringent for acne-prone skin helps treat acne and prevent future breakouts and blackheads. It’s also gentle enough to use morning, noon and night, because it won't over-dry or irritate your skin.
+This maximum strength formula contains Witch Hazel, a natural ingredient known for its skin-soothing properties, as well as Salicylic Acid, an acne-fighting ingredient recommended by dermatologists. It penetrates deep into pores to help remove the dirt, oil and makeup that can cause breakouts. It also instantly eliminates and controls excess surface oil, so you’re always ready to face the day.")
+
+
+Review.create(title: 'Best Cleanser Ever', rating: '5', review: 'Cleanses well without drying skin', user_id: 1, product_id: 1 )

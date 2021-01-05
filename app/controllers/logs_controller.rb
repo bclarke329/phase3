@@ -35,7 +35,7 @@ class LogsController < ApplicationController
 
      def destroy # ask o about delete method 
         if current_user
-        Log.find_by_id[params[:id]].destroy
+        Log.find_by_id(params[:id]).destroy
         redirect_to logs_url
         end 
      end 

@@ -35,7 +35,10 @@ class RoutinesController < ApplicationController
     end 
 
     def destroy
-        Routine.find_by_id(params[:id]).destroy
+        if current_user
+            Routine.find_by_id(params[:id]).destroy
+            redirect_to routines_url
+            end 
     end 
 
     

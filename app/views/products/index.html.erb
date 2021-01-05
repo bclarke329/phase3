@@ -11,8 +11,8 @@ to eventually collect user reviews in one place. </p>
 <div>
 
 <% @products.each do |p| %>
-<%= p.brand.capitalize %> |
+<h6><%= p.brand.capitalize %> |
 <%= link_to p.name, "/products/#{p.id}"%></a>
-<%= p.product_type.capitalize%><br>
+<%= p.product_type.capitalize%><br><h6>
 <% end %>
 </div>

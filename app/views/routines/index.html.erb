@@ -2,6 +2,7 @@
 <div class="text-center">
 <u><h1>All Routines</h1></u>
 <br>
+<br>
 <% @routine.each do |routine| %>
 <h5><p>Cleanser:</p></h5>
 <%= routine.cleanser %><br><br>
@@ -15,7 +16,7 @@
 <%= routine.spf %><br><br>
 <h5><p>Is this your AM or PM routine?</label></h5><br>
 <%= routine.time_of_day %><br><br>
-________________________________
+_______________________________
 <% end %>
 </div>
 
