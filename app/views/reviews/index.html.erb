@@ -3,6 +3,7 @@
 <div class="text-center">
 <h1>All Reviews for <%= @product.name %></h1>
 <br>
+
 <% @reviews.each do |r| %>
 <h4><%= r.title %></h4><br>
 <h6>My Rating | <%= r.rating %> stars!</h6><br>

@@ -26,10 +26,11 @@ class ReviewsController < ApplicationController
             user_id: session[:user_id],
             product_id: params[:product_id]
         )
-        if @review.save
+        if @review.valid? && @review.save
             current_user.reviews << @review
             redirect_to product_reviews_path
         else 
+            flash[:message] = "Sorry, a few errors prevented this review from saving."
             render :new
         end 
     end 

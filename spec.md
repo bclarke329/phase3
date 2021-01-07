@@ -1,6 +1,4 @@
 
-
-
  
 
  Include at least two has_many through relationships (x has_many y through z; e.g. Recipe has_many Items through Ingredients)

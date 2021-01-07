@@ -3,6 +3,7 @@ class RoutinesController < ApplicationController
 
     def index
         @routine = Routine.where(:user_id => current_user.id)
+        @sorted_routines = @routine.order("created_at DESC")
     end 
 
     def new

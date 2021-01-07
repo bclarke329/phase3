@@ -24,7 +24,7 @@ Navigate to  `localhost:3000`, then just create an account to check out the app.
 
 # Contributing 
 <br>
-Please do not make any contributions to this project. This project was built for the sole purpose of practicing the RoR framework and submitting it as my project for Flatiron's phase 3 project. Thank you. 
+Please do not make any contributions without permission. Thank you.  
 
 
 # License

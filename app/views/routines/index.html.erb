@@ -3,20 +3,9 @@
 <u><h1>All Routines</h1></u>
 <br>
 <br>
-<% @routine.each do |routine| %>
-<h5><p>Cleanser:</p></h5>
-<%= routine.cleanser %><br><br>
-<h5><p>Toner:</p></h5><br>
-<%= routine.toner %><br><br>
-<h5><p>Moisturizer:</p></h5><br>
-<%= routine.moisturizer %><br><br>
-<h5><p>Serum:</p></h5><br>
-<%= routine.serum %><br><br>
-<h5><p>Sunscreen:</p></h5><br>
-<%= routine.spf %><br><br>
-<h5><p>Is this your AM or PM routine?</label></h5><br>
-<%= routine.time_of_day %><br><br>
-_______________________________
+<% @sorted_routines.each do |r| %>
+<%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
+
 <% end %>
 </div>
 
