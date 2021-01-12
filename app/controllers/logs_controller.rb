@@ -25,6 +25,7 @@ class LogsController < ApplicationController
 
      def edit #renders the edit form 
         @edit = Log.find_by_id(params[:id])
+        redirect_to posts_path if !@log || @log.user != current_user
      end 
 
      def update #handles actually changing the db

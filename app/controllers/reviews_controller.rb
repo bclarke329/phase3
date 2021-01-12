@@ -40,12 +40,20 @@ class ReviewsController < ApplicationController
         @product = Product.find(@review.product_id)
     end 
 
+    def destroy 
+        if current_user
+            Review.find_by_id(params[:id]).destroy
+            redirect_to reviews_url
+         end 
+    end 
+
 
     private
 
     def redirect_if_not_review_author
         redirect_to review_path if @review.user != current_user
-     end
+    end
+
    # def review_params
     #     params.require(:review).permit(:title, :rating, :review, :product_id)
     # end

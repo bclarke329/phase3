@@ -1,9 +1,12 @@
-<span class="container">
-<span class="right">
 <br>
 <br>
 <br>
 <br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
 <h1>Sign up to get started</h1>
 <%= form_for(@user, url:'/signup') do |f| %>
 
@@ -20,11 +23,14 @@
 
 <%= f.label :password_confirmation%><br>
 <%= f.password_field :password_confirmation%><br><br>
-<%= f.submit "Sign Up"%>
+<%= f.submit "Sign Up"%> | <%= link_to "Log In", login_path %>
+</div>
 <% end %>
-    </span>
-</span>
-<<span class="right">
-<img src="/assets/Beige Floral Natural Makeup Beauty Logo (2).png" alt="logo" width="500" height="500">
-</span
- 
+<%= render partial: "layouts/errors", locals: {object: @user} %>
+<br>
+<br>
+         <div class="col-lg-6">
+<img src="/assets/Beige Floral Natural Makeup Beauty Logo (2).png" alt="logo" width="700" height="700">
+ </div>
+    </div>
+</div>

@@ -17,13 +17,12 @@ class RoutinesController < ApplicationController
         redirect_to @routine
        else 
         render :new
-      
        end 
     end 
 
     def show 
        @routine = Routine.find_by_id(params[:id])
-       binding.pry
+
     end
 
     def edit 
@@ -39,7 +38,7 @@ class RoutinesController < ApplicationController
         if current_user
             Routine.find_by_id(params[:id]).destroy
             redirect_to routines_url
-            end 
+        end 
     end 
 
     

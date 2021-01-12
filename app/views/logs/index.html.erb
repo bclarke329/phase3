@@ -5,3 +5,6 @@
 <% @sorted_logs.each do |l| %><br>
 <%= link_to l.created_at.strftime('%A, %b %d'), "/logs/#{l.id}" %>
 <% end %>
+<% if !@logs.any? %>
+<h5><%= "You have no logs saved." %></h5>
+<% end %>

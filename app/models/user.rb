@@ -6,7 +6,8 @@ class User < ApplicationRecord
 
     has_secure_password
 
-    validates_presence_of :name, :email, message: "Must provide a name and email"
+    validates :name, format: { without: /[0-9]/, message: "does not allow numbers" }
+    validates_presence_of :email, message: "Must provide an email"
     validates_confirmation_of :password, message: "Please enter a password"
     validates :email, uniqueness: true
 

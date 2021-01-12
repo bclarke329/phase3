@@ -1,20 +1,15 @@
 <br>
-
+<br>
 <%= form_with model: @routine do |f| %>
 <%= f.label :cleanser %><br>
 <%= f.text_field :cleanser %><br>
 <%= f.label :toner %><br>
 <%= f.text_field :toner %><br>
 <%= f.label :moisturizer %><br>
-<%= f.text_field :moisturizer %><br>
+<%= f.text_field :moisturizer  %><br>
 <%= f.label :serum %><br>
 <%= f.text_field :serum %><br>
 <%= f.label :spf %><br>
-<%= f.text_field :spf %><br>
-<%= f.label :time_of_day, "Is this your morning or evening routine?" %><br>
-<%= f.check_box :time_of_day %>
-<%= f.label :time_of_day, "AM" %>
-<%= f.check_box :time_of_day %>
-<%= f.label :time_of_day, "PM" %><br><br>
+<%= f.text_field :spf %><br><br>
 <%= f.submit "Create Routine" %>
 <% end %>

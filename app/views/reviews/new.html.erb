@@ -3,4 +3,6 @@
 <br>
 <u><h1>Leave A Review for <%= @product.brand %> | <%= @product.name %></h1></u>
 <%= render 'form' %>
+
+<%= render partial: "layouts/errors", locals: {object: @review} %>
 </div>
