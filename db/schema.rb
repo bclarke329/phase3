@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_06_210232) do
+ActiveRecord::Schema.define(version: 2021_01_12_211258) do
 
   create_table "logs", force: :cascade do |t|
     t.string "current_condition"
@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 2021_01_06_210232) do
     t.string "moisturizer"
     t.string "serum"
     t.string "spf"
-    t.string "time_of_day"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
