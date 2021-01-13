@@ -2,7 +2,7 @@
 <div class="text-center">
 <br>
 <u><h1>Leave A Review for <%= @product.brand %> | <%= @product.name %></h1></u>
-<%= render 'form' %>
+<%= render 'form', review: @review %>
 
 <%= render partial: "layouts/errors", locals: {object: @review} %>
 </div>

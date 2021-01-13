@@ -1,24 +1,11 @@
 
-<div class="text-center">
-<%= form_tag(product_reviews_path) do %>
-  <div class="form-group">
-     <%= label_tag(:title, "Review Headline") %>
-      <%= text_field_tag(:title, nil, class: "form-control") %>
-  </div>
-  <div class="form-group">
-     <%= label_tag(:rating, "How many stars would you give this product? Between 1-5 stars.") %>
-     <%= number_field_tag(:rating, nil, class: "form-control") %>
-  </div>
-  <div class="form-group">
-     <%= label_tag(:review) %>
-     <%= text_area_tag(:review, nil, class: "form-control") %>
-  </div>
-  <div class="actions">
-   <%= submit_tag("Add Review") %>
-  </div>
+
+<%= form_with(model: @review, url: product_reviews_path(@product)) do |f| %>
+<%= f.label :title %><br>
+<%= f.text_field :title %><br>
+<%= f.label :rating %><br>
+<%= f.number_field :rating%><br>
+<%= f.label :review %>
+<%= f.text_area :review %><br>
+<%= f.submit "Submit Review" %><br>
 <% end %>
-<%# 
-## validations needed with this data
-title can't be more than 30 characters
-rating must be from 0-5
-review cant be more than 300. %>

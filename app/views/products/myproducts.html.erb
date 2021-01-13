@@ -1,0 +1,8 @@
+<br>
+<div>
+<h2>My products </h2>
+<% @products.each do |p|  %>
+<%= p.name %><br>
+<%= p.reviews.count %> 
+
+<% end %>

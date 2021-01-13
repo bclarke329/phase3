@@ -1,8 +1,9 @@
 class User < ApplicationRecord
     has_many :logs
     has_many :routines
-    has_many :products
     has_many :reviews
+    has_many :products, through: :reviews
+   
 
     has_secure_password
 

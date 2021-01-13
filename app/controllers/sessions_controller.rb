@@ -26,7 +26,6 @@ class SessionsController < ApplicationController
         u.name = auth.extra.raw_info.given_name
         u.email = auth.extra.raw_info.email
         u.password = SecureRandom.hex(12)
-        binding.pry
         end 
         if user.save
            session[:user_id] = user.id

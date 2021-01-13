@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   #omniauth callback route
   get '/auth/:provider/callback' => 'sessions#omniauth'
 
+  get '/myproducts' => 'products#myproducts'
 
   resources :users
   resources :routines
@@ -21,4 +22,5 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show] do 
     resources :reviews, only: [:new, :create, :index, :destroy]
   end
+  
 end
