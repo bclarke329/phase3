@@ -2,9 +2,8 @@
 <div class="text-center">
 <h2>My products </h2>
 <p> A list of the products you've reviewed.</p>
-<% @products.each do |p|  %>
-<%= p.name %><br>
-<%= p.reviews.count %> 
+<% @products.each do |p|  %><br>
+<%=  p.name %> |
+<%= p.reviews.count %> reviews.
 
 <% end %>
-<>
