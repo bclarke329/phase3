@@ -18,7 +18,6 @@ class ReviewsController < ApplicationController
     end 
 
     def create
-        binding.pry
         @review = current_user.reviews.build(review_params)
         @product = Product.find_by_id(params[:product_id])
         @review.product = @product
