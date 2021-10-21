@@ -1,0 +1,51 @@
+html {
+    background-color: #FFCDB2;
+}
+
+/* home page */
+.welcome-headline {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 4em;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.column-left {
+    flex: 50%;
+    align-items: center; 
+}
+
+.column-right {
+    flex: 50%;
+}
+
+.home-page-image {
+    width: 50%;
+    height: auto;
+    
+    
+}
+
+.home-button {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 1em 1.5em;
+    margin: 1em;
+    text-decoration: none;
+    line-height: 4;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home-button:hover {
+    background-color: #B5838D;
+    color: white;
+}
+

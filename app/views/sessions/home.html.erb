@@ -1,11 +1,17 @@
-<div class="text-center">
+<h1 class="welcome-headline">Welcome to DermaLog</h1>
+<div class="row">
 <br>
-<h1>Welcome to DermaLog</h1>
+<div class="column-left">
+<img src="../assets/shutterstock_1149010520.jpg" alt="dropper bottle and orange" class="home-page-image">
+</div>
 <br>
+<%# <%= button_to "Sign Up", signup_path, :method => "get"%>
+<div class="column-right"> 
+<%= link_to "Sign Up", signup_path, class: 'home-button'  %> 
 <br>
-<img src="../assets/shutterstock_1770758042.png" alt="glow_time" width="1200" height="500">
+<%= link_to "Log In", login_path, class: 'home-button' %> 
 <br>
-<%= link_to "Sign Up", signup_path %> |
-<%= link_to "Log In", login_path %> |
-<%= link_to "Log In With Google", '/auth/google_oauth2' %>
+<%= link_to "Log In With Google", '/auth/google_oauth2', class: 'home-button' %>
+<br>
+</div>
 </div>
