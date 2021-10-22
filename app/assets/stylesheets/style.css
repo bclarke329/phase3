@@ -18,7 +18,7 @@ html {
 
 .column-left {
     flex: 50%;
-    align-items: center; 
+    
 }
 
 .column-right {
@@ -28,6 +28,7 @@ html {
 .home-page-image {
     width: 50%;
     height: auto;
+    margin-left: 45%;
     
     
 }
@@ -42,10 +43,15 @@ html {
     text-decoration: none;
     line-height: 4;
     font-family: 'Raleway', sans-serif;
+    width: 50%;
+    height: 50%
 }
 
 .home-button:hover {
     background-color: #B5838D;
     color: white;
 }
+
+/* log in page  */
+
 
