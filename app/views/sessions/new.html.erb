@@ -1,21 +1,25 @@
 
 <br>
-<br>
-<br>
 <h1 class="welcome-headline">Welcome To The DermaLog</h1>
 <br>
-<div>
-<h3>Please Log In</h3>
-
-<% if flash[:message]%>
-<%= flash[:message] %>
-<% end %>
-<br>
-<%= form_for :user do |f| %>
-<%= f.label :email %><br>
-<%= f.email_field :email, required:true %><br>
-<%= f.label :password %><br>
-<%= f.password_field :password, required:true %><br>
-<%= f.submit "Log In" %>
-<% end %>
+<div class="login-row">
+    <div class="login-left">
+        <h3 class="login-headline">Please Log In</h3>
+        <div class="form">
+            <% if flash[:message]%>
+            <%= flash[:message] %>
+            <% end %>
+            <br>
+            <%= form_for :user do |f| %>
+            <%= f.label :email, :class => "login-label" %><br>
+            <%= f.email_field :email, :class => "login-input", required:true %><br>
+            <%= f.label :password, :class => "login-label" %><br>
+            <%= f.password_field :password, :class => "login-input", required:true %><br>
+            <%= f.submit "Log In", :class => "login-submit" %>
+            <% end %>
+        </div>
+    </div>
+    <div class="login-right">
+        <%= link_to "Log In With Google", '/auth/google_oauth2', class: 'home-button' %>
+    </div>
 </div>

@@ -43,8 +43,8 @@ html {
     text-decoration: none;
     line-height: 4;
     font-family: 'Raleway', sans-serif;
-    width: 50%;
-    height: 50%
+    width: 3em;
+    height: 3em;
 }
 
 .home-button:hover {
@@ -53,5 +53,66 @@ html {
 }
 
 /* log in page  */
+
+.login-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.login-headline {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+.form {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #F7F8F0;
+    padding: 20px;
+}
+
+.login-left {
+    flex: 50%;
+    margin-left: 25%;
+}
+
+.login-right {
+    flex: 50%;
+    margin-right: 25%;
+}
+
+.login-left + .login-right {
+    border-left: solid 1px gray;
+    height: 10%
+}
+
+.login-label{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box
+
+}
+
+.login-submit {
+    width: 100%;
+    background-color: #E5989B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 
