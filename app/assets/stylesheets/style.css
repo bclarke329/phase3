@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     background-color: #FFCDB2;
 }
@@ -57,7 +60,7 @@ html {
 .login-row {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center; 
 }
 
 .login-headline {
@@ -115,4 +118,34 @@ html {
     cursor: pointer;
 }
 
+/* navigation */
+
+nav {
+    background-color: #E9EBDF;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 1.5em;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: #E5989B;
+    color: white;
+}
+
+/* show page */
+
+.home-headline {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
 

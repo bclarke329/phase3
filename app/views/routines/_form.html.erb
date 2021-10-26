@@ -1,15 +1,21 @@
 <br>
 <br>
-<%= form_with model: @routine do |f| %>
-<%= f.label :cleanser %><br>
-<%= f.text_field :cleanser %><br>
-<%= f.label :toner %><br>
-<%= f.text_field :toner %><br>
-<%= f.label :moisturizer %><br>
-<%= f.text_field :moisturizer  %><br>
-<%= f.label :serum %><br>
-<%= f.text_field :serum %><br>
-<%= f.label :spf %><br>
-<%= f.text_field :spf %><br><br>
-<%= f.submit "Create Routine" %>
+<div class="routine-row">
+<div class="routine-col">
+</div>
+<div class="routine-col" id="routine-form">
+    <%= form_with model: @routine do |f| %>
+    <%= f.label :cleanser, :class => "routine-label" %><br>
+    <%= f.text_field :cleanser, :class => "routine-input" %><br>
+    <%= f.label :toner, :class => "routine-label" %><br>
+    <%= f.text_field :toner, :class => "routine-input" %><br>
+    <%= f.label :moisturizer, :class => "routine-label" %><br>
+    <%= f.text_field :moisturizer, :class => "routine-input"  %><br>
+    <%= f.label :serum, :class => "routine-label" %><br>
+    <%= f.text_field :serum, :class => "routine-input" %><br>
+    <%= f.label :spf, :class => "routine-label" %><br>
+    <%= f.text_field :spf, :class => "routine-input" %><br><br>
+    <%= f.submit "Create Routine", :class => "routine-submit" %>
 <% end %>
+</div>
+</div>
