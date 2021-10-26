@@ -1,9 +1,7 @@
 <br>
 <br>
-<div class="routine-row">
-<div class="routine-col">
-</div>
-<div class="routine-col" id="routine-form">
+
+<div id="routine-form">
     <%= form_with model: @routine do |f| %>
     <%= f.label :cleanser, :class => "routine-label" %><br>
     <%= f.text_field :cleanser, :class => "routine-input" %><br>
@@ -18,4 +16,4 @@
     <%= f.submit "Create Routine", :class => "routine-submit" %>
 <% end %>
 </div>
-</div>
+
