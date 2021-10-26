@@ -151,12 +151,23 @@ nav {
 
 /* routine page */
 
+.routine-left {
+    flex: 50%;
+    
+    
+}
+
+.routine-right {
+    flex: 50%;
+}
+
 #routine-form {
     display: inline-block;
     border-radius: 5px;
     background-color: #F7F8F0;
     padding: 20px;
-    margin-left: 45%;
+    margin-left: 25%;
+    width: 60%;
 }
 
 .routine-label {
@@ -197,5 +208,13 @@ nav {
     text-align: center;
     margin-left: 20%;
     font-size: 2.3em;
+}
+
+.routine-tip {
+    background-color: #F7F8F0;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60%;
+    margin-left: 25%;
 }
 

@@ -1,12 +1,15 @@
 <div class="row">
-<div class="column-left">
+<div class="routine-left">
     <h1 id="routine-headline">Create a Routine</h1>
+    <p class="routine-tip">✨Glow Tip: Most routines take at least a month to start showing results, and at least three months to know if it has been effective.
+    Avoid switching routines often. </p>
 
     <%= render 'form' %>
 
     <%= render partial: "layouts/errors", locals: {object: @routine} %>
 </div>
-<div class="column-right">
+<div class="routine-right">
+    <p>
     <img src="../assets/skincare bottles.jpg" alt="skincare-bottles" id="skincare-bottles">
 </div>
 </div>
