@@ -1,12 +1,12 @@
 
 <%= form_with model: @log do |f| %>
-<%= f.label :current_condition, "How is your skin feeling today?" %><br>
-<%= f.select :current_condition, ['Normal', 'Dry', 'Oily', 'Sensitive', 'Breaking Out'] %><br>
-<%= f.label :water_level, "How much water did you drink today?" %><br>
-<%= f.number_field :water_level, in: 0...128 %>oz<br>
-<%= f.label :hours_slept, "How many hours of sleep did you get?" %><br>
-<%= f.number_field :hours_slept, in: 0...12 %>hr<br>
-<%= f.label :comments, "A space for comments, concerns, observations, or lots of self love."%><br>
-<%= f.text_area :comments %><br>
-<%= f.submit "Create Log" %>
+<%= f.label :current_condition, "How is your skin feeling today?", :class => "form-label" %><br>
+<%= f.select :current_condition, ['Normal', 'Dry', 'Oily', 'Sensitive', 'Breaking Out'], :class => "log-dropdown" %><br>
+<%= f.label :water_level, "How much water did you drink today?", :class => "form-label"  %><br>
+<%= f.number_field :water_level, in: 0...128, :class => "log-number" %>oz<br>
+<%= f.label :hours_slept, "How many hours of sleep did you get?", :class => "form-label"  %><br>
+<%= f.number_field :hours_slept, in: 0...12, :class => "log-number" %>hr<br>
+<%= f.label :comments, "A space for comments, concerns, observations, or lots of self love.", :class => "form-label" %><br>
+<%= f.text_area :comments, :class => "log-text" %><br>
+<%= f.submit "Create Log", :class => "form-submit" %>
 <% end %>

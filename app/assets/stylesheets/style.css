@@ -215,6 +215,12 @@ nav {
     cursor: pointer;
 }
 
+/* log css */
+
+.log-headline {
+    font-family: 'Poiret One', cursive;;
+}
+
 /* dashboard css */
 
 .dash-headline {
@@ -229,6 +235,6 @@ nav {
 .dash-routine {
     background-color: #F7F8F0;
     padding: 20px;
-    border-color: #b5838d;
+    border: 5px inset #b5838d;
 
 }

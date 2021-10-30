@@ -1,14 +1,14 @@
-<br>
-<div class="text-center">
-<u><h1>All Routines</h1></u>
-<br>
-<br>
-<% if !@sorted_routines.any? %>
-<h5><%= "You have not created a routine yet!" %></h5>
-<% end %>
-<% @sorted_routines.each do |r| %>
-<%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
+<div class="container">
+    <div class="grid">
+        <u><h1>All Routines</h1></u>
 
-<% end %>
+        <% if !@sorted_routines.any? %>
+        <h5><%= "You have not created a routine yet!" %></h5>
+        <% end %>
+        <% @sorted_routines.each do |r| %>
+        <%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
+
+        <% end %>
+    </div>
 </div>
 

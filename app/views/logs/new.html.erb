@@ -1,11 +1,11 @@
-<br>
-<%= render partial: "layouts/errors", locals: {object: @log} %>
-<div class="text-center">
-<h1>Create A Log</h1>
-<%= render 'form' %>
-<br>
-<br>
-
+<div class="row">
+    <div class="column">
+        <div class="form">
+            <h1 class="log-headline">Create A Log</h1>
+            <%= render 'form' %>
+            <%= render partial: "layouts/errors", locals: {object: @log} %>
+        </div>
+    </div>
 </div>
 <br>
 
