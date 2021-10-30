@@ -73,6 +73,7 @@ html {
     border-radius: 5px;
     background-color: #F7F8F0;
     padding: 20px;
+    width: 85%;
 }
 
 .login-left {
@@ -90,32 +91,26 @@ html {
     height: 10%
 }
 
-.login-label{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.login-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+/* signup page css */
+.signup-form {
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box
-
+    border-radius: 5px;
+    background-color: #F7F8F0;
+    margin-top: 25%;
+    padding: 20px;
+    width: 90%;
 }
-
-.login-submit {
+.login-button {
     width: 100%;
     background-color: #E5989B;
+    line-height: 4;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* navigation */
@@ -169,34 +164,6 @@ nav {
     margin-left: 25%;
     width: 60%;
 }
-
-.routine-label {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.routine-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box
-}
-
-.routine-submit {
-    width: 100%;
-    background-color: #E5989B;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
 #skincare-bottles {
     height: 50%;
     width: 50%;
@@ -218,3 +185,50 @@ nav {
     margin-left: 25%;
 }
 
+/* form css  */
+
+
+.form-label {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box
+}
+
+.form-submit {
+    width: 100%;
+    background-color: #E5989B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* dashboard css */
+
+.dash-headline {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.dash-container {
+    display: inline-grid;
+}
+
+.dash-routine {
+    background-color: #F7F8F0;
+    padding: 20px;
+    border-color: #b5838d;
+
+}

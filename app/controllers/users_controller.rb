@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find_by_id(params[:id])
+        @routine = Routine.order("created_at").last
     end
 
     private 

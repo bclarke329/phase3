@@ -11,11 +11,11 @@
             <% end %>
             <br>
             <%= form_for :user do |f| %>
-            <%= f.label :email, :class => "login-label" %><br>
-            <%= f.email_field :email, :class => "login-input", required:true %><br>
-            <%= f.label :password, :class => "login-label" %><br>
-            <%= f.password_field :password, :class => "login-input", required:true %><br>
-            <%= f.submit "Log In", :class => "login-submit" %>
+            <%= f.label :email, :class => "form-label" %><br>
+            <%= f.email_field :email, :class => "form-input", required:true %><br>
+            <%= f.label :password, :class => "form-label" %><br>
+            <%= f.password_field :password, :class => "form-input", required:true %><br>
+            <%= f.submit "Log In", :class => "form-submit" %>
             <% end %>
         </div>
     </div>

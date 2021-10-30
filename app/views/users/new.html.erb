@@ -1,36 +1,31 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-<h1>Sign up to get started</h1>
-<%= form_for(@user, url:'/signup') do |f| %>
+<div class="row">
+<div class="column">
+    <div class="signup-form">
+        <h1 id="Signup-headline">Sign up to get started</h1>
+        <%= form_for(@user, url:'/signup') do |f| %>
 
-<%= f.label :name %><br>
+        <%= f.label :name, :class => "form-label" %><br>
 
-<%= f.text_field :name, required:true %><br>
+        <%= f.text_field :name, required:true, :class => "form-input" %><br>
 
-<%= f.label :email %><br>
+        <%= f.label :email, :class => "form-label" %><br>
 
-<%= f.email_field :email, required:true %><br>
+        <%= f.email_field :email, required:true, :class => "form-input" %><br>
 
-<%= f.label :password %><br>
-<%= f.password_field :password, required:true %><br>
+        <%= f.label :password, :class => "form-label"%><br>
+        <%= f.password_field :password, required:true, :class => "form-input" %><br>
 
-<%= f.label :password_confirmation%><br>
-<%= f.password_field :password_confirmation%><br><br>
-<%= f.submit "Sign Up"%> | <%= link_to "Log In", login_path %>
-</div>
-<% end %>
-<%= render partial: "layouts/errors", locals: {object: @user} %>
-<br>
-<br>
-         <div class="col-lg-6">
-<img src="/assets/Beige Floral Natural Makeup Beauty Logo (2).png" alt="logo" width="700" height="700">
- </div>
+        <%= f.label :password_confirmation, :class => "form-label"%><br>
+        <%= f.password_field :password_confirmation, :class => "form-input"%><br><br>
+        <%= f.submit "Sign Up", :class => "form-submit"%>  <%= link_to "Log In", login_path, class: "login-button" %>
+        
+    
+
+        <%= render partial: "layouts/errors", locals: {object: @user} %>
+        <% end %>
     </div>
 </div>
+<div class="column"> 
+    <img src="/assets/Beige Floral Natural Makeup Beauty Logo (2).png" alt="logo" width="700" height="700">
+</div>
+ </div>
