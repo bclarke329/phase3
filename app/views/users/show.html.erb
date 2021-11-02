@@ -1,6 +1,6 @@
 <h1 class="home-headline">Welcome, <%= @user.name %>!</h1>
 <div class="dash-container">
-    <div class="dash-routine">
+    <div class="dash">
         <p class="dash-headline"> Your Current Routine </p>
         <p>Cleanser: <%= @routine.cleanser%></p>
         <p>Toner: <%= @routine.toner%></p>
@@ -9,6 +9,13 @@
         <p>Sunscreen: <%= @routine.spf%></p>
     </div>
 
+    <div class="dash">
+        <p class="dash-headline"> Your Last Log </p>
+        <p>How is your skin feeling today? <%= @log.current_condition%>
+        <p>How much water did you have? <%= @log.water_level%> oz.
+        <p>How many hours of sleep did you get? <%= @log.hours_slept%> hrs.
+        <p>Comments, Concerns, or Self Love: <%= @log.comments%>
+    </div>
 
 
 </div>
