@@ -221,6 +221,17 @@ nav {
     font-family: 'Poiret One', cursive;;
 }
 
+#log-form {
+    margin: 5em 3em;   
+}
+
+.glow-tip {
+    background-color: #F7F8F0;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60%;
+}
+
 /* dashboard css */
 
 .dash-headline {

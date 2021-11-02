@@ -1,10 +1,14 @@
 <div class="row">
-    <div class="column">
-        <div class="form">
+    <div class="column-left">
+        <div class="form" id="log-form">
             <h1 class="log-headline">Create A Log</h1>
             <%= render 'form' %>
             <%= render partial: "layouts/errors", locals: {object: @log} %>
         </div>
+    </div>
+    <div class="column-right">
+        <p class="glow-tip">✨Glow tip: Keeping a log of how your skin feels can help you pinpoint exactly what makes your skin feel its best. </p>
+        <p class="glow-tip">✨Glow tip: Drinking water can keep your face from feeling dry. Aim to drink at least 50 ounces a day.</p>
     </div>
 </div>
 <br>

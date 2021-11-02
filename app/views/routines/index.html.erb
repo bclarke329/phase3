@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="grid">
+    <div class="column-left">
         <u><h1>All Routines</h1></u>
 
         <% if !@sorted_routines.any? %>
@@ -9,6 +9,8 @@
         <%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
 
         <% end %>
+    </div>
+    <div class="column-right">
     </div>
 </div>
 
