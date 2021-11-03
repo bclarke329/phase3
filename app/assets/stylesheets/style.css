@@ -185,6 +185,21 @@ nav {
     margin-left: 25%;
 }
 
+#skincare-doodle {
+    display: block;
+    margin: 5em auto;
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.all-routines {
+    background-color: #F7F8F0;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 30%;
+}
 /* form css  */
 
 
@@ -228,8 +243,9 @@ nav {
 .glow-tip {
     background-color: #F7F8F0;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     width: 60%;
+    color: black
 }
 
 /* dashboard css */
@@ -249,4 +265,27 @@ nav {
     padding: 20px;
     border: 5px inset #b5838d;
     margin: 1em;
+}
+
+/* product index page */
+
+.product-index {
+    background-color: #F7F8F0;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 5%;
+    font-size: 1.3em;
+}
+
+.product-info {
+    background-color: #F7F8F0;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.product-reviews {
+    background-color: #F7F8F0;
 }

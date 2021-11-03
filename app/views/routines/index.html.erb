@@ -1,16 +1,22 @@
-<div class="container">
+<img src="../assets/shutterstock_1728158860.png" alt="skincare routine doodle" id="skincare-doodle">
+
+<div class="row">
     <div class="column-left">
-        <u><h1>All Routines</h1></u>
+        <div class="all-routines">
+            <h1 class="home-headline">All Routines</h1>
 
-        <% if !@sorted_routines.any? %>
-        <h5><%= "You have not created a routine yet!" %></h5>
-        <% end %>
-        <% @sorted_routines.each do |r| %>
-        <%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
+            <% if !@sorted_routines.any? %>
+            <h5><%= "You have not created a routine yet!" %></h5>
+            <% end %>
+            <% @sorted_routines.each do |r| %>
+            <%= link_to r.created_at.strftime('%A, %b, %d'), "/routines/#{r.id}"%><br>
 
-        <% end %>
+            <% end %>
+        </div>
     </div>
     <div class="column-right">
+    <p class="glow-tip"> ✨Glow tip: Always make sure to patch test when adding a new product into your routine.</p>
+    <p class="glow-tip"> ✨Glow tip: Avoid using products with heavy alcohols.</p>
     </div>
 </div>
 

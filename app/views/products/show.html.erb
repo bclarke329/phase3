@@ -1,15 +1,22 @@
-<br>
-<div class="text-center">
-<br>
-<h4><%= @product.name %></h4> 
-<h4><%= @product.brand %></h4>
-<h4><%= @product.product_type.capitalize %></h4>
-________________________________________
-<br>
-<br>
-<p><%= @product.description %></p>
-<br>
-<br>
-<br> 
-<%= link_to "Leave A Review", new_product_review_path(@product.id)  %> |
-<%= link_to "View All Reviews", product_reviews_path(@product.id) %>
+<div class="product-info">
+    <p><%= @product.name %></p> 
+    <p><%= @product.brand %></p>
+    <p><%= @product.product_type.capitalize %></p>
+    <p><%= @product.description %></p>
+
+    <%= link_to "Leave A Review", new_product_review_path(@product.id)  %> 
+    <%= link_to "View All Reviews", product_reviews_path(@product.id) %>
+</div>
+<div class="product-reviews">
+    <% if !@product_reviews.any? %>
+    <p>><%= "No one has reviewed this product." %></p>
+    <% else %>
+    <% @product_reviews.each do |r| %>
+    <p>Review left by: <%= r.user.name%> </p>
+    <p>Title: <%= r.title %></p>
+    <p>Stars: <%= r.rating%></p>
+    <p><%= r.review%></p>
+    <br>
+    <% end %>
+    <% end %>
+</div>

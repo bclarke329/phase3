@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+### products request
+
 Product.create(brand: 'CosRx', name: 'Good Morning Cleanser', product_type: 'cleanser', description: "Keep your skin fresh and clean with COSRX Low pH Good Morning Gel Cleanser! Formulated with botanical skin-purifying ingredients, this gentle and hydrating formula rinses away impurities without disrupting the skin's natural moisture balance. Best for all skin types, especially oily skin and sensitive skin.")
 
 Product.create(brand: 'CosRx', name: 'Triple Hyaluronic Moisturizing Cleanser', product_type: 'cleanser', description: "CosRx's Triple Hyaluronic Moisturizing Cleanser provides the satisfying lather of a foam cleanser with the moisturizing benefits of a cream cleanser. Three types of replenishing hyaluronic acid deliver layers of moisture while the cleanser thoroughly dissolves oil, dirt, and pore impurities. Vitamin B5 conditions and softens the skin for a super smooth, hydrated result.")
@@ -37,7 +39,3 @@ Product.create(brand: 'La Roche-Posay', name: 'Effaclar Medicated Gel Cleanser f
 Product.create(brand: 'Acure', name: 'Ultra Hydrating 12 HR Facial Moisturizer', product_type: 'moisturizer', description: 'This ultra hydrating 12 hour facial moisturizer provides intense moisture for super thirsty skin types. Adaptogenic ashwagandha, holy basil, reishi, cordyceps, and turmeric soothe and protect while free radical scavenging spinach, kale and spirulina de-stress.' ) 
 
 Product.create(brand: 'Clinique', name: 'Moisure Surge 72-Hour Auto-Replenishing Hydrator', product_type: 'moisturizer', description: 'The Moisture Surge 72-Hour Auto-Replenishing Hydrator is an addictively refreshing gel-cream enhanced to give your skin the power to rehydrate itself. Delivers an instant moisture boost, and keeps skin almost twice as hydrated at the end of the day than it did before. With hyaluronic acid and activated aloe water to help plump skin with moisture. Enjoy 72 hours of non-stop hydration, even after washing your face.')
-
-
-#review seed data
-Review.create(title: 'Best Cleanser Ever', rating: '5', review: 'Cleanses well without drying skin', user_id: 1, product_id: 1 )

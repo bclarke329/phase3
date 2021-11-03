@@ -1,18 +1,9 @@
-<br>
-<br>
-<div class="text-center">
-<u><h1>View Products</h1></u>
-<br>
-<p>We'll continute to update this database from time to time.
-<br>
-You'll be able to see what other users are saying about all of the products you have<br>
-you have ever wanted to try, all in one place.</p>
-<br>
-<div>
 
+<div class="product-index">
+<h1> View Products </h1>
 <% @products.each do |p| %>
 <h6><%= p.brand.capitalize %> |
-<%= link_to p.name, "/products/#{p.id}"%></a>
+<%= link_to p.name, "/products/#{p.id}"%></a> |
 <%= p.product_type.capitalize%><br><h6>
 <% end %>
 </div>

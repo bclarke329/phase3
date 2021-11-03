@@ -21,7 +21,7 @@ class ReviewsController < ApplicationController
         @review = current_user.reviews.build(review_params)
         @product = Product.find_by_id(params[:product_id])
         @review.product = @product
-        binding.pry
+        
         if @review.save
          redirect_to product_reviews_path(@product)
         else 
@@ -31,7 +31,8 @@ class ReviewsController < ApplicationController
           
     def show
         # @review = Review.find(params[:id])
-        @product = Product.find(@review.product_id)
+        @product_review = Product.find(@review.product_id)
+        
     end 
 
     def destroy 
